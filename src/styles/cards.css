@@ -1,0 +1,51 @@
+.cards{
+    margin: 0px 5% 0px 10px ;
+}
+
+.cards h3{
+    text-decoration: underline;
+    text-decoration-color: rgb(0, 110, 255);
+    text-decoration-thickness: 5px;
+}
+
+.cards::after{
+    content: "";
+    display: block;
+    background-color: rgba(128, 128, 128, 0.486);
+    position: absolute;
+    top: 340px;
+    width: 23vw;
+    height: 2px;
+}
+
+.cards .contents{
+    margin-top: 10px;
+    overflow: auto;
+    width: 23vw;
+    height: 600px;
+}
+
+.cards img{
+    width: 22vw;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.435);
+}
+
+.cards .contents::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.cards .contents::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.cards .contents::-webkit-scrollbar-thumb {
+  background: rgba(0, 110, 255, 0.565); 
+}
+
+/* Handle on hover */
+.cards .contents::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 110, 255); 
+}
